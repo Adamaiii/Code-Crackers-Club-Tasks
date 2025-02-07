@@ -1,0 +1,15 @@
+T=[ ]
+L=int((input("Board lenght:")))
+for i in range (0,L):
+   TAB=int(input("N°:"))
+   T.append(TAB)
+print("T=",T)   
+S=int(input("Searched value:"))
+for i in range (0,L-1):
+   for j in range (1,L):
+     S1=T[i]+T[j]
+     if S1==S:
+       print(f"pos:[{i+1},{j+1}]")
+       break
+else:
+   print("Searched number doesn't exist")  
